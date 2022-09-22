@@ -44,6 +44,16 @@
             android:id="@+id/ed1"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Enter Employee Name"
+            android:paddingLeft="15dp"
+            android:textSize="27dp"
+            android:layout_marginTop="15dp"
+            android:textColorHint="@color/Gray"/>
+        <EditText
+            android:id="@+id/ed2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
             android:hint="Enter Designation"
             android:background="@drawable/rounded_edittext"
             android:paddingLeft="15dp"
@@ -51,21 +61,11 @@
             android:layout_marginTop="15dp"
             android:textColorHint="@color/Gray" />
         <EditText
-            android:id="@+id/ed2"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:background="@drawable/rounded_edittext"
-            android:hint="Enter Salary"
-            android:paddingLeft="15dp"
-            android:textSize="27dp"
-            android:layout_marginTop="15dp"
-            android:textColorHint="@color/Gray"/>
-        <EditText
             android:id="@+id/ed3"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@drawable/rounded_edittext"
-            android:hint="Enter Employee Name"
+            android:hint="Enter Salary"
             android:paddingLeft="15dp"
             android:textSize="27dp"
             android:layout_marginTop="15dp"
@@ -108,12 +108,6 @@
             android:textSize="11dp"
             android:textStyle="bold"/>
     </LinearLayout>
-    <SearchView
-        android:id="@+id/inputSearch"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@drawable/bgsearch"
-        android:layout_marginTop="11dp" />
     <ListView
         android:id="@+id/list_view"
         android:layout_width="match_parent"

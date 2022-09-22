@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/DarkSlateGray"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:id="@+id/nav"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/LightSeaGreen"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="Employee App"
+            android:textColor="@color/White"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/nav_bt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="@color/White"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Employee"
+            android:textSize="30dp"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/ed1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter Designation"
+            android:background="@drawable/rounded_edittext"
+            android:paddingLeft="15dp"
+            android:textSize="27dp"
+            android:layout_marginTop="15dp"
+            android:textColorHint="@color/Gray" />
+        <EditText
+            android:id="@+id/ed2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Enter Salary"
+            android:paddingLeft="15dp"
+            android:textSize="27dp"
+            android:layout_marginTop="15dp"
+            android:textColorHint="@color/Gray"/>
+        <EditText
+            android:id="@+id/ed3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Enter Employee Name"
+            android:paddingLeft="15dp"
+            android:textSize="27dp"
+            android:layout_marginTop="15dp"
+            android:textColorHint="@color/Gray"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Employee"
+            android:backgroundTint="@color/LightSeaGreen"
+            android:textColor="@color/White"
+            android:textSize="11dp"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Record"
+            android:backgroundTint="@color/LightSeaGreen"
+            android:textColor="@color/White"
+            android:textSize="11dp"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:backgroundTint="@color/LightSeaGreen"
+            android:textColor="@color/White"
+            android:textSize="11dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <SearchView
+        android:id="@+id/inputSearch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bgsearch"
+        android:layout_marginTop="11dp" />
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/listitem"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp">
+    </ListView>
+
+</LinearLayout>
